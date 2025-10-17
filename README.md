@@ -9,16 +9,16 @@ Este é um projeto de filmes e avaliações de filmes. A visualização dos dado
 ## Abaixo estão os testes de API que você deverá implementar utilizando o RestAssured. O mínimo para aprovação no desafio são 8 dos 10 testes.
 
 ### MovieContollerRA:
-[x] findAllShouldReturnOkWhenMovieNoArgumentsGiven
-[x] findAllShouldReturnPagedMoviesWhenMovieTitleParamIsNotEmpty
-[x] findByIdShouldReturnMovieWhenIdExists
-[x] findByIdShouldReturnNotFoundWhenIdDoesNotExist
-[x] insertShouldReturnUnprocessableEntityWhenAdminLoggedAndBlankTitle
-[x] insertShouldReturnForbiddenWhenClientLogged
-[x] insertShouldReturnUnauthorizedWhenInvalidToken
+- [x] findAllShouldReturnOkWhenMovieNoArgumentsGiven
+- [x] findAllShouldReturnPagedMoviesWhenMovieTitleParamIsNotEmpty
+- [x] findByIdShouldReturnMovieWhenIdExists
+- [x] findByIdShouldReturnNotFoundWhenIdDoesNotExist
+- [x] insertShouldReturnUnprocessableEntityWhenAdminLoggedAndBlankTitle
+- [x] insertShouldReturnForbiddenWhenClientLogged
+- [x] insertShouldReturnUnauthorizedWhenInvalidToken
 
 ### ScoreContollerRA:
-[x] saveScoreShouldReturnNotFoundWhenMovieIdDoesNotExist
-[x] saveScoreShouldReturnUnprocessableEntityWhenMissingMovieId
-[x] saveScoreShouldReturnUnprocessableEntityWhenScoreIsLessThanZero
+- [x] saveScoreShouldReturnNotFoundWhenMovieIdDoesNotExist
+- [x] saveScoreShouldReturnUnprocessableEntityWhenMissingMovieId
+- [x] saveScoreShouldReturnUnprocessableEntityWhenScoreIsLessThanZero
 
