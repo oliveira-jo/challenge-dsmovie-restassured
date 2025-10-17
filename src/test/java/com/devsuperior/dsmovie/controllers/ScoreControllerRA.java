@@ -11,9 +11,9 @@ import org.json.simple.JSONObject;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.devsuperior.dsmovie.tests.TokenUtil;
-
 import io.restassured.http.ContentType;
+
+import com.devsuperior.dsmovie.tests.TokenUtil;
 
 public class ScoreControllerRA {
 
@@ -34,7 +34,7 @@ public class ScoreControllerRA {
 	}
 
 	@Test
-	public void saveScoreShouldReturnNotFoundWhenMovieIdDoesNotExist() throws Exception {
+	public void saveScore_ShouldReturnNotFound_WhenMovieIdDoesNotExist() throws Exception {
 
 		postScoreInstance.put("movieId", 31);
 		JSONObject newScore = new JSONObject(postScoreInstance);
@@ -54,7 +54,7 @@ public class ScoreControllerRA {
 	}
 
 	@Test
-	public void saveScoreShouldReturnUnprocessableEntityWhenMissingMovieId() throws Exception {
+	public void saveScore_ShouldReturnUnprocessableEntity_WhenMissingMovieId() throws Exception {
 
 		postScoreInstance = new HashMap<>();
 		postScoreInstance.put("score", 4);
@@ -76,7 +76,7 @@ public class ScoreControllerRA {
 	}
 
 	@Test
-	public void saveScoreShouldReturnUnprocessableEntityWhenScoreIsLessThanZero() throws Exception {
+	public void saveScore_ShouldReturnUnprocessableEntity_WhenScoreIsLessThanZero() throws Exception {
 
 		postScoreInstance.put("score", -4);
 		JSONObject newScore = new JSONObject(postScoreInstance);
